@@ -54,7 +54,7 @@ void order2(int *a,int n )/*选择排序法*/
 void order3(int *a,int n )/*插入排序法*/
 {
 	int i,j,m;
-	for(i=0;i<n;i++)
+	for(i=1;i<n;i++)
 	{
 		m=a[i];	
 		for(j=i-1;m<a[j]&&j>=0;j--)
@@ -67,7 +67,7 @@ void order3(int *a,int n )/*插入排序法*/
 void order4(int *a,int n )/*两侧排序法*/
 {
 	int i,j,k1,k2;
-	for(i=0;i<=n/2;i++)
+	for(i=0;i<n/2;i++)
 	{
 		k1=i;	
 		for(j=i+1;j<n-i;j++)
